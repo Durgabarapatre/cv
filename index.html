@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <link>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="styleSheet" href="style.css"></link>
+    <link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/icon?family=Material+Icons"
+/>
+    <title>Currency Converter</title>
+  </head>
+  <body>  
+    <div class="container">
+      <form class="form">
+        <h1>Currency Converter</h1>
+     <p>Enter input</p>
+     <input autocomplete="off" name="currency-input" placeholder="Enter Amount"/>
+     <div class="currency-container">
+     <div class="select-box">
+      <img src="https://flagsapi.com/US/flat/64.png">
+      <select name="from" id="from" class="select-currency">
+      </select>
+     </div>
+     <span class="material-icons" id="currency_exchange">
+      currency_exchange
+      </span>
+     <div class="select-box">
+      <img src="https://flagsapi.com/IN/flat/64.png">
+      <select name="to"  id="to" class="select-currency">
+      </select>
+     </div>
+    </div>
+     <div class="msg">
+      1USD=80INR
+     </div>
+     <button id="convert-currency-btn">Convert Currency</button>
+     </form>
+    </div>
+    <!-- </div> -->
+    <script type="module" src="currencyConverter.js"></script>
+  </body>
+</html>
